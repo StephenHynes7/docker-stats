@@ -14,7 +14,7 @@ function stats(opts) {
   var events = opts.events || allContainers(opts);
   var streams = {};
   var oldDestroy = result.destroy;
-  var interval = opts.statsinterval || 1;
+  var interval = opts.statsinterval
 
   result.setMaxListeners(0);
 
